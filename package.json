@@ -1,0 +1,19 @@
+{
+  "name": "doubleimpact",
+  "version": "0.0.0",
+  "description": "see and xhr ",
+  "main": "app.js",
+  "dependencies": {
+    "sessions": "0.0.2-7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": "0.8.x"
+  },
+  "repository": "",
+  "author": "daithi44",
+  "license": "BSD"
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <style>
+
+      .channel {
+        padding-top:20px;
+        width:33%;
+        height:90px;
+        float:left;
+        background-color: #ccc;
+        font-size: 60px;
+        text-align: center ;
+        -webkit-border-radius: 40px;
+        -moz-border-radius: 40px;
+        border-radius: 40px;
+        border: #000 solid 1px;
+      }
+
+      #channels {
+        width 100%;
+      }
+
+      .buttons {
+        width:33%;
+        float:left;
+        text-align: center ;
+      }
+       .label {
+        width:33%;
+        float:left;
+        text-align: center ;
+      }
+
+      #sse {
+        width:100%;
+        text-align: center ;
+        height:50px;
+        font-size : 60px;
+        height:90px;
+      }
+
+    </style>
+   </head>
+  <body>
+    <div id="sse">
+      XHR and SSE
+    </div>
+    <div class="label">Channel 1</div><div class="label">Channel 2</div><div class="label">Channel 3</div>
+    <div id="display_one" class="channel">
+        Channel 1 
+    </div>
+    <div id="display_two" class="channel">
+        Channel 2
+    </div>
+    <div id="display_three" class="channel">
+        Channel 3
+    </div>
+    <div id="channels">
+      <div class="buttons"><button type="button"  id="one_add" >Channel 1 ON</button><button type="button"  id="one_remove" >Channel OFF</button></div> 
+      <div class="buttons"><button type="button"  id="two_add" >Channel 2 ON</button><button type="button"  id="two_remove" >Channel OFF</button></div> 
+      <div class="buttons"><button type="button"  id="three_add" >Channel 3 ON</button><button type="button"  id="three_remove" >Channel OFF</button></div> 
+    </div>
+<script src="js/script.js">
+</script>
+  </body>
+</html>
+
