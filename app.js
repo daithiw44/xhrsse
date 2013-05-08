@@ -67,8 +67,8 @@ var server = http.createServer(function(req, res) {
         listeners[session.uid()] = {
           'client': client
         };
+        eventClient = listeners[session.uid()].client;
       }
-      eventClient = listeners[session.uid()].client;
     }
     else if (req.method === 'POST' && req.url === '/channel') {
       buf = '';
@@ -134,9 +134,9 @@ function tuneOut(sessionuid, channel) {
 
 /** Start Module EventClient **/
 function EventClient_onEvent(e) {
-	var _this = this;
+  var _this = this;
   console.log(e);
-	_this.res.write('data: ' + JSON.stringify(e) + '\r\n\r\n');
+  _this.res.write('data: ' + JSON.stringify(e) + '\r\n\r\n');
 }
 
 function EventClient(req, res, sessionuid) {
@@ -147,7 +147,8 @@ function EventClient(req, res, sessionuid) {
     audi(sessionuid);
   });
   res.writeHead(200, {'Content-Type': 'text/event-stream'});
-  res.write(''); // flush headers
+  console.log('write');
+  res.write(' '); // flush headers
 }
 /** End Module EventClient **/
 
