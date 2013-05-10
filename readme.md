@@ -10,4 +10,4 @@ A chunk of data too large for an XHR response delivery, requested by an XHR resp
 
 Finally as in our example here we have 3 channels broadcasting random unicode characters (as an example) from a server and a user utilizing XHR to tune in and tune out of stream of data for one to three of these channels. Thats the power of SSE one directional communication from the server steered from the client.
 
-Remember XHR is not a dirty word, users don't care as long as it works. SSE is not the ugy sibling of websockets. Its pretty, well supported and is worth a look and finally websockets aren't always available and you might not always want socketIO.
+Remember XHR is not a dirty word, users don't care as long as it works. SSE is not the ugy sibling of websockets. Its pretty, well supported and is worth a look and  as a final point websockets aren't always available and you might not always want to or need to carry all the offerings of socketIO.
