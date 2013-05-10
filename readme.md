@@ -8,6 +8,6 @@ A communication channel where the broadcast is seen by the listener as the messa
 
 A chunk of data too large for an XHR response delivery, requested by an XHR response but delivered by SSE, thus avoiding filling up an XHR responseText buffer and having all the issues that go along with that.
 
-Finally as in our example here we have 3 channels broadcasting random unicode characters (as an example) from a server and a user utilizing XHR to tune in and tune out of stream of data for one to three of these channels. Thats the power of SSE one directional communication from the server steered from the client.
+Finally as in our example [video here](http://vimeo.com/65889087) we have 3 channels broadcasting random unicode characters (as an example) from a server and a user utilizing XHR to tune in and tune out of stream of data for one to three of these channels. Thats the power of SSE one directional communication from the server steered from the client.
 
 Remember XHR is not a dirty word, users don't care as long as it works. SSE is not the ugy sibling of websockets. Its pretty, well supported and is worth a look and  as a final point websockets aren't always available and you might not always want to or need to carry all the offerings of socketIO.
