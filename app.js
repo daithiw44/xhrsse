@@ -58,7 +58,7 @@ var server = http.createServer(function(req, res) {
     }
 
     if (req.url === '/') {
-      req.url === '/index.html';
+      req.url = '/index.html';
     }
 
     if (req.url === '/stream') {
